@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: elwyn
-  Date: 2/19/2018
-  Time: 12:43
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
@@ -60,6 +54,24 @@
                     </li>
                 </ul>
             </li>
+            
+               <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Notifications">
+                <a class="nav-link" href="${pageContext.request.contextPath}/admin/exam/add">
+                    <i class="fa fa-fw fa-bell-o"></i>
+                    <span class="nav-link-text">Add Exam</span>
+                </a>
+            </li>
+            
+            
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Notifications">
+                <a class="nav-link" href="${pageContext.request.contextPath}/admin/exam/take">
+                    <i class="fa fa-fw fa-bell-o"></i>
+                    <span class="nav-link-text">Take Exam</span>
+                </a>
+            </li>
+           
+           
+            
         </ul>
         <ul class="navbar-nav sidenav-toggler">
             <li class="nav-item">

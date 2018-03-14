@@ -61,11 +61,11 @@
                         <tr>
                             <td>${Std.id}</td>
                             <td>${Std.name}</td>
-                            <td>${Std.gender}</td>
                             <td>${Std.country}</td>
-                                                        <td>${Std.hobbies}</td>
-                            <td><a href="${cp}/admin/course/edit?id=${Std.id}">Edit</a></td>
-                            <td><a href="${cp}/admin/course/delete?id=${Std.id}">Delete</a></td>
+                            <td>${Std.gender}</td>
+                            <td>${Std.hobby}</td>
+                            <td><a href="${cp}/admin/student/edit?id=${Std.id}">Edit</a></td>
+                            <td><a href="${cp}/admin/student/delete?id=${Std.id}">Delete</a></td>
                         </tr>
                         </c:forEach>
                         </tbody>

@@ -7,6 +7,7 @@ public class StudentModel {
 	private String country;
 	private String gender;
 	private String[] hobbies;
+	private String hobby;
 
 	public StudentModel() {
 		// super();
@@ -27,6 +28,17 @@ public class StudentModel {
 		this.country = country;
 		this.gender = gender;
 		this.hobbies = hobbies;
+	}
+	
+	
+
+	public StudentModel(int id, String name, String country, String gender, String hobby) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.country = country;
+		this.gender = gender;
+		this.hobby = hobby;
 	}
 
 	public int getId() {
@@ -68,5 +80,17 @@ public class StudentModel {
 	public void setHobbies(String[] hobbies) {
 		this.hobbies = hobbies;
 	}
+
+	public String getHobby() {
+		return hobby;
+	}
+
+	public void setHobby(String hobby) {
+		this.hobby = hobby;
+	}
+	
+	
+	
+	
 
 }

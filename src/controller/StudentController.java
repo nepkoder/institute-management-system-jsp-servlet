@@ -54,23 +54,23 @@ public class StudentController extends HttpServlet {
 	            RequestDispatcher requestDispatcher = request.getRequestDispatcher("/displayStudent.jsp");
 	            requestDispatcher.forward(request,response);
 	        }
-	        else if (request.getRequestURI().equals(request.getContextPath()+"/admin/Student/edit")){
+	        else if (request.getRequestURI().equals(request.getContextPath()+"/admin/student/edit")){
 	            int id = Integer.parseInt(request.getParameter("id"));
-	            ArrayList<CourseModel> arrayList = CourseDAO.getById(id);
-	            request.setAttribute("editDetails",arrayList);
+	            ArrayList<StudentModel> arrayList = StudentDAO.getById(id);
+	            request.setAttribute("sedit",arrayList);
 
 	            request.getRequestDispatcher("/editStudent.jsp").forward(request,response);
 	        }
 	        else if(request.getRequestURI().equals(request.getContextPath()+"/admin/student/delete")){
 	            int id = Integer.parseInt(request.getParameter("id"));
-	            if( CourseDAO.DeleteContent(id) == true ){
+	            if(StudentDAO.DeleteContent(id) == true ){
 	                System.out.println("One row deleted !!!");
 	                response.sendRedirect(request.getContextPath()+"/admin/student/display");
 	            }
+	        }
 //	            else {
 //	                processRequest(request,response,"Process Delete failed !!!");
 //	            }
-
 	}
 
 	/**

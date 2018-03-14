@@ -62,14 +62,14 @@
 									<label for="inputhobbies">Hobbies</label>
 									<div class="form-control">
 										<input name="shobbies" id="exampleInputDuration"
-											type="checkbox" value="football">Sports &nbsp; <input
+											type="checkbox" value="Sports">Sports &nbsp; <input
 											name="shobbies" id="exampleInputDuration" type="checkbox"
-											value="swimming">Swimming &nbsp; <input
+											value="Swimming">Swimming &nbsp; <input
 											name="shobbies" id="exampleInputDuration" type="checkbox"
 											value="dance">Coding &nbsp; <input name="shobbies"
-											id="exampleInputDuration" type="checkbox" value="dance">Music
+											id="exampleInputDuration" type="checkbox" value="Music">Music
 										&nbsp; <input name="shobbies" id="exampleInputDuration"
-											type="checkbox" value="dance">Dancing &nbsp;
+											type="checkbox" value="Dancing">Dancing &nbsp;
 									</div>
 								</div>
 								<input type="submit" class="btn btn-primary btn-block"

@@ -21,9 +21,9 @@
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Notifications">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="${pageContext.request.contextPath}/admin/relation/add">
                     <i class="fa fa-fw fa-bell-o"></i>
-                    <span class="nav-link-text">Notifications</span>
+                    <span class="nav-link-text">Add Relation</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Course">

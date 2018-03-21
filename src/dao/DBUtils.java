@@ -2,6 +2,8 @@ package dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class DBUtils {
@@ -23,6 +25,25 @@ public class DBUtils {
 		}
 		return conn;
 		
+	}
+	
+	public static boolean isValidUser(String user, String pass) {
+		boolean status = false;
+		Connection conn = DBUtils.MyConnection();
+		try {
+			PreparedStatement ps = conn.prepareStatement("select *from userlogin where user = ? and pass =?");
+			ps.setString(1, user);
+			ps.setString(2, pass);
+			ResultSet rs = ps.executeQuery();
+			while(rs.next()) {
+				status = true;
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+			// TODO: handle exception
+		}
+		
+		return status;
 	}
 
 }

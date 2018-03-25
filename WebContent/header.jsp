@@ -15,9 +15,9 @@
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Events">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="${pageContext.request.contextPath}/admin/fileupload">
                     <i class="fa fa-fw fa-envelope-o"></i>
-                    <span class="nav-link-text">Events</span>
+                    <span class="nav-link-text">File Upload</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Notifications">

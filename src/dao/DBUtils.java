@@ -8,6 +8,9 @@ import java.sql.SQLException;
 
 public class DBUtils {
 	
+	/**
+	 * @return connection for database 
+	 */
 	public static Connection MyConnection() {
 		String url = "jdbc:mysql://localhost:3306/imsdb";
 		String user = "root";
@@ -27,6 +30,12 @@ public class DBUtils {
 		
 	}
 	
+	
+	/**
+	 * @param user for login username
+	 * @param pass for login password
+	 * @return
+	 */
 	public static boolean isValidUser(String user, String pass) {
 		boolean status = false;
 		Connection conn = DBUtils.MyConnection();
